@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #afe8d9;
-    --clr-dark: #303030;
-    --clr-accent: #3fcfdf;
+    --clr-light: #addada;
+    --clr-dark: #0c092c;
+    --clr-accent: #6ebbb0;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -173,7 +173,7 @@ header {
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
@@ -191,31 +191,6 @@ header {
     top: 1em;
     z-index: 1000;
 }
-
-.nav-open .nav {
-    transform: translateX(0);
-}
-
-.nav-open .nav-toggle {
-    position: fixed;
-}
-
-.nav-open .hamburger {
-    transform: rotate(.625turn);
-}
-
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-    opacity: 0;
-}
-
-
-
-
-
 
 .hamburger {
     display: block;
@@ -280,9 +255,9 @@ header {
     
     .section__subtitle--intro {
         align-self: start;
-        grid-column: -1 /1;
+        grid-column: -1 / 1;
         grid-row: 2;
-        text-align: right; 
+        text-align: right;
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
@@ -460,19 +435,4 @@ header {
 
 .social-list__link {
     padding: .5em;
-}
-
-
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
